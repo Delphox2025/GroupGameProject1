@@ -1,0 +1,55 @@
+{
+	"name": "EnemyBlock1",
+	"plugin-id": "Sprite",
+	"sid": 959429828920548,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "DMG",
+			"type": "number",
+			"desc": "Takes one HP from player",
+			"sid": 806098542582888
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 171372293023971
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 178303797493755
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 226475,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 920090868921816,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

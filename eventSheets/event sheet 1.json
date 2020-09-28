@@ -1,0 +1,451 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Timer",
+			"type": "number",
+			"initialValue": "60",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 455174419610450
+		},
+		{
+			"eventType": "comment",
+			"text": "Adding target to turts"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 966002917518397
+				}
+			],
+			"actions": [
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turts",
+					"sid": 290846015180577,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Player"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turts2",
+					"sid": 553929077602717,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Player"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turts3",
+					"sid": 338482031192576,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Player"
+					}
+				}
+			],
+			"sid": 783730228092295
+		},
+		{
+			"eventType": "comment",
+			"text": "Make Turts Shoot the missels "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Turts",
+					"sid": 152781560833267,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Turts",
+					"sid": 237961351154017,
+					"parameters": {
+						"object": "EnemyBlock1",
+						"layer": "2",
+						"image-point": "1"
+					}
+				}
+			],
+			"sid": 881996207039633
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Turts2",
+					"sid": 610257334460342,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Turts2",
+					"sid": 249688908963286,
+					"parameters": {
+						"object": "EnemyBlock1",
+						"layer": "2",
+						"image-point": "1"
+					}
+				}
+			],
+			"sid": 131255396320056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Turts3",
+					"sid": 426114734465090,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 486243773947463,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Turts3",
+					"sid": 342114926183031,
+					"parameters": {
+						"object": "HopeBlock",
+						"layer": "2",
+						"image-point": "1"
+					}
+				}
+			],
+			"sid": 574235164896739
+		},
+		{
+			"eventType": "comment",
+			"text": "Blocks angles/Speed also make bullets destroy : ps. Round will restart as well "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "EnemyBlock1",
+					"sid": 750392012830532
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "EnemyBlock1",
+					"sid": 539779208251917,
+					"parameters": {
+						"angle": "-180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "EnemyBlock1",
+					"sid": 373193696831821,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "400"
+					}
+				}
+			],
+			"sid": 509572478387245
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "HopeBlock",
+					"sid": 998140676771601
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "HopeBlock",
+					"sid": 377947054082925,
+					"parameters": {
+						"angle": "-180"
+					}
+				}
+			],
+			"sid": 617006235220790,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "EnemyBlock1",
+					"sid": 491320637554388,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Player",
+					"sid": 822038765754938,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "EnemyBlock1",
+					"sid": 103824509855026
+				}
+			],
+			"sid": 883455156641549
+		},
+		{
+			"eventType": "comment",
+			"text": "This should make it so that when the HopeBlock hits the player he goes immune to the red bullets and the turt will stop shooting at player, you can only grab hopeblock Once"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "HopeBlock",
+					"sid": 606660033603135,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Turts3",
+					"sid": 794165757022232
+				}
+			],
+			"sid": 434593635076450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 939056538490016,
+					"parameters": {
+						"object": "HopeBlock"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 394793695942009,
+					"parameters": {
+						"animation": "\"Immune\"",
+						"from": "current-frame"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 563134725364287,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 335698935487034,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 441448199023157
+		},
+		{
+			"eventType": "comment",
+			"text": "Just a Finisher place holder for now! "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Goal",
+					"sid": 930346524610805,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 889939203686173,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 262162126525062
+				}
+			],
+			"sid": 586905280213276
+		},
+		{
+			"eventType": "comment",
+			"text": "This will make round restart once hp is lower or or 0 "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 495087055941866,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 889695129998720
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 578891404840058,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 484110964807647
+				}
+			],
+			"sid": 872432062477699
+		},
+		{
+			"eventType": "comment",
+			"text": "Attempt at a timer for the bottom "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 820418487414669
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TimerHopefully",
+					"sid": 326313603940948,
+					"parameters": {
+						"text": "\"Timer: \" & Timer"
+					}
+				}
+			],
+			"sid": 685617631136599
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 910989869949892,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 398220519447295,
+					"parameters": {
+						"variable": "Timer",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TimerHopefully",
+					"sid": 442884926629871,
+					"parameters": {
+						"text": "\"Timer: \" & Timer"
+					}
+				}
+			],
+			"sid": 529816586141187
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 941035533742588,
+					"parameters": {
+						"variable": "Timer",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 731839781363142
+				}
+			],
+			"sid": 262473851663345
+		}
+	],
+	"sid": 444953107164376
+}

@@ -1,0 +1,78 @@
+{
+	"name": "Player",
+	"plugin-id": "Sprite",
+	"sid": 100532580856631,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "HP",
+			"type": "number",
+			"desc": "Player health ",
+			"sid": 144866100374526
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 191677390044182
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 115638117387311
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4614418,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 100097732121253,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3887008,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 417137915046776,
+				"name": "Immune",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
