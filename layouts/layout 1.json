@@ -25,8 +25,8 @@
 						}
 					},
 					"world": {
-						"x": 859.5,
-						"y": 503.5,
+						"x": 860,
+						"y": 910,
 						"width": 1733,
 						"height": 123,
 						"originX": 0.5,
@@ -174,8 +174,8 @@
 						}
 					},
 					"world": {
-						"x": 1758,
-						"y": 266,
+						"x": 2783,
+						"y": 564,
 						"width": 117.04699910719626,
 						"height": 117.04699910719626,
 						"originX": 0.5,
@@ -186,7 +186,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 0.003654064126435319,
 						"zElevation": 0
 					}
 				},
@@ -261,8 +261,8 @@
 						}
 					},
 					"world": {
-						"x": 1758,
-						"y": 376,
+						"x": 2791,
+						"y": 771,
 						"width": 117.04699910719626,
 						"height": 117.04699910719626,
 						"originX": 0.5,
@@ -393,7 +393,7 @@
 	"sid": 475226036852991,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
+	"width": 2708,
 	"height": 960,
 	"unboundedScrolling": false,
 	"eventSheet": "Event sheet 1"
