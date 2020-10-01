@@ -69,50 +69,7 @@
 		{
 			"name": "UI",
 			"overriden": 0,
-			"instances": [
-				{
-					"type": "TimerHopefully",
-					"properties": {
-						"text": "Timer: 60",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 30,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 10,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 5,
-						"y": 427,
-						"width": 344,
-						"height": 140,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 598234048230404,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -129,9 +86,9 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 0,
-			"parallaxY": 0,
-			"scaleRate": 0,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,
 			"blendMode": "normal",
@@ -151,9 +108,7 @@
 						"live-preview": false
 					},
 					"uid": 3,
-					"instanceVariables": {
-						"HP": 5
-					},
+					"instanceVariables": {},
 					"behaviors": {
 						"BoundToLayout": {
 							"properties": {
@@ -245,9 +200,7 @@
 						"live-preview": false
 					},
 					"uid": 4,
-					"instanceVariables": {
-						"DMG": 1
-					},
+					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
 							"properties": {
@@ -399,35 +352,6 @@
 						"y": -298,
 						"width": 43.08131845707604,
 						"height": 43.08131845707604,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Goal",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 9,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1542.5,
-						"y": 381,
-						"width": 77,
-						"height": 121,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

@@ -3,14 +3,7 @@
 	"plugin-id": "Sprite",
 	"sid": 959429828920548,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "DMG",
-			"type": "number",
-			"desc": "Takes one HP from player",
-			"sid": 806098542582888
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Bullet",

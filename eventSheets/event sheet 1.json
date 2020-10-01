@@ -2,16 +2,6 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "Timer",
-			"type": "number",
-			"initialValue": "60",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 455174419610450
-		},
-		{
 			"eventType": "comment",
 			"text": "Adding target to turts"
 		},
@@ -141,7 +131,7 @@
 		},
 		{
 			"eventType": "comment",
-			"text": "Blocks angles/Speed also make bullets destroy : ps. Round will restart as well "
+			"text": "Blocks angles/Speed also make bullets destroy "
 		},
 		{
 			"eventType": "block",
@@ -208,15 +198,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "subtract-from-instvar",
-					"objectClass": "Player",
-					"sid": 822038765754938,
-					"parameters": {
-						"instance-variable": "HP",
-						"value": "1"
-					}
-				},
 				{
 					"id": "destroy",
 					"objectClass": "EnemyBlock1",
@@ -291,160 +272,6 @@
 				}
 			],
 			"sid": 441448199023157
-		},
-		{
-			"eventType": "comment",
-			"text": "Just a Finisher place holder for now! "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Goal",
-					"sid": 930346524610805,
-					"parameters": {
-						"object": "Player"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 889939203686173,
-					"parameters": {
-						"seconds": "3"
-					}
-				},
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 262162126525062
-				}
-			],
-			"sid": 586905280213276
-		},
-		{
-			"eventType": "comment",
-			"text": "This will make round restart once hp is lower or or 0 "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Player",
-					"sid": 495087055941866,
-					"parameters": {
-						"instance-variable": "HP",
-						"comparison": 3,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Player",
-					"sid": 889695129998720
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 578891404840058,
-					"parameters": {
-						"seconds": "3"
-					}
-				},
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 484110964807647
-				}
-			],
-			"sid": 872432062477699
-		},
-		{
-			"eventType": "comment",
-			"text": "Attempt at a timer for the bottom "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 820418487414669
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "TimerHopefully",
-					"sid": 326313603940948,
-					"parameters": {
-						"text": "\"Timer: \" & Timer"
-					}
-				}
-			],
-			"sid": 685617631136599
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 910989869949892,
-					"parameters": {
-						"interval-seconds": "1.0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 398220519447295,
-					"parameters": {
-						"variable": "Timer",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TimerHopefully",
-					"sid": 442884926629871,
-					"parameters": {
-						"text": "\"Timer: \" & Timer"
-					}
-				}
-			],
-			"sid": 529816586141187
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 941035533742588,
-					"parameters": {
-						"variable": "Timer",
-						"comparison": 3,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 731839781363142
-				}
-			],
-			"sid": 262473851663345
 		}
 	],
 	"sid": 444953107164376

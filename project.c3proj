@@ -15,14 +15,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
-			"author": "Scirra",
-			"version": "r210.2",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -80,9 +72,7 @@
 			"Turts",
 			"Turts2",
 			"Turts3",
-			"HopeBlock",
-			"Goal",
-			"TimerHopefully"
+			"HopeBlock"
 		],
 		"subfolders": []
 	},
