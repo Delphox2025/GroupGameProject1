@@ -272,6 +272,135 @@
 				}
 			],
 			"sid": 441448199023157
+		},
+		{
+			"eventType": "comment",
+			"text": "Should make the Ctrl's swap around "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 437653744351524,
+					"parameters": {
+						"object": "CtrlSwap"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 729767349952797
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "CtrlSwap",
+					"sid": 518809456945021,
+					"parameters": {
+						"object": "Player2",
+						"layer": "2",
+						"image-point": "0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CtrlSwap",
+					"sid": 496027105360426
+				}
+			],
+			"sid": 319686247051346
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Player2",
+					"sid": 402629401280609
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Player2",
+					"sid": 691882849323188,
+					"parameters": {
+						"width": "70.867644",
+						"height": "64.9597"
+					}
+				},
+				{
+					"id": "set-jump-strength",
+					"objectClass": "Player2",
+					"sid": 872130694809472,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "300"
+					}
+				}
+			],
+			"sid": 424041629075816
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player2",
+					"sid": 708389556562824,
+					"parameters": {
+						"object": "CtrlSwap2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "CtrlSwap2",
+					"sid": 624182279235828,
+					"parameters": {
+						"object": "Player3",
+						"layer": "2",
+						"image-point": "0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Player2",
+					"sid": 440310719997065
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CtrlSwap2",
+					"sid": 358562183574829
+				}
+			],
+			"sid": 181902613042868
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Player3",
+					"sid": 654374905926493
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Player3",
+					"sid": 691099448224873,
+					"parameters": {
+						"width": "70.867644",
+						"height": "64.9597"
+					}
+				}
+			],
+			"sid": 424570990467951
 		}
 	],
 	"sid": 444953107164376

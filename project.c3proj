@@ -15,6 +15,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -34,6 +42,14 @@
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r210.2",
 			"bundled": false
@@ -72,7 +88,12 @@
 			"Turts",
 			"Turts2",
 			"Turts3",
-			"HopeBlock"
+			"HopeBlock",
+			"CtrlSwap",
+			"Keyboard",
+			"Player2",
+			"CtrlSwap2",
+			"Player3"
 		],
 		"subfolders": []
 	},
@@ -236,7 +257,7 @@
 		"enhancedAccelerationPrecision": true,
 		"cordovaiOSScheme": "app"
 	},
-	"viewportWidth": 1710,
-	"viewportHeight": 560,
+	"viewportWidth": 2710,
+	"viewportHeight": 960,
 	"firstLayout": null
 }
