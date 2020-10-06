@@ -787,27 +787,27 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 394793695942009,
+					"sid": 763040114609826,
 					"parameters": {
 						"animation": "\"Immune\"",
-						"from": "current-frame"
+						"from": "beginning"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 743493701649248,
+					"sid": 504723659890029,
 					"parameters": {
-						"seconds": "3.5"
+						"seconds": "5"
 					}
 				},
 				{
 					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 739618503660247,
+					"sid": 753063987134696,
 					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "current-frame"
+						"animation": "\"Run\"",
+						"from": "beginning"
 					}
 				},
 				{
@@ -844,77 +844,6 @@
 		{
 			"eventType": "comment",
 			"text": "Slide Ctrl's/ Ctrl's in general "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 286085937427268,
-					"parameters": {
-						"key": 40
-					}
-				},
-				{
-					"id": "is-on-floor",
-					"objectClass": "Player",
-					"sid": 885780339808230,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 615906132263993,
-					"parameters": {
-						"animation": "\"Slide\"",
-						"from": "current-frame"
-					}
-				}
-			],
-			"sid": 163248796443699
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-animation-finished",
-					"objectClass": "Player",
-					"sid": 270144578871451,
-					"parameters": {
-						"animation": "\"Slide\""
-					}
-				},
-				{
-					"id": "is-on-floor",
-					"objectClass": "Player",
-					"sid": 618720684627427,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 146278192345068,
-					"disabled": true,
-					"parameters": {
-						"seconds": "1"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 885734181166964,
-					"parameters": {
-						"animation": "\"Walk\"",
-						"from": "current-frame"
-					}
-				}
-			],
-			"sid": 796832476097861
 		},
 		{
 			"eventType": "block",
@@ -1037,15 +966,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-jump",
+					"id": "is-jumping",
 					"objectClass": "Player",
-					"sid": 937259262834588,
-					"behaviorType": "Platform"
-				},
-				{
-					"id": "is-on-floor",
-					"objectClass": "Player",
-					"sid": 485480565147551,
+					"sid": 873550467362489,
 					"behaviorType": "Platform"
 				}
 			],
@@ -1053,14 +976,38 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 356564762074004,
+					"sid": 583924273599045,
 					"parameters": {
-						"animation": "\"Immune\"",
-						"from": "current-frame"
+						"animation": "\"Jump\"",
+						"from": "beginning"
 					}
 				}
 			],
-			"sid": 507810333497645
+			"sid": 797711215965318
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "Player",
+					"sid": 252025310289069,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 425199803340571,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 448117119017496,
+			"disabled": true
 		}
 	],
 	"sid": 444953107164376

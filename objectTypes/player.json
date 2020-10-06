@@ -110,6 +110,53 @@
 				],
 				"sid": 543828775870031,
 				"name": "Run",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 33,
+						"originX": 0.4583333333333333,
+						"originY": 0.4696969696969697,
+						"originalSource": "C:\\Users\\MoN3Y\\OneDrive\\Pictures\\Camera Roll\\ninja_sprite.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8372032,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 22,
+						"height": 33,
+						"originX": 0.5,
+						"originY": 0.4696969696969697,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4278825,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 22,
+						"height": 33,
+						"originX": 0.5,
+						"originY": 0.4696969696969697,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2121487,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 245851633082841,
+				"name": "Immune",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
