@@ -41,6 +41,60 @@
 					"parameters": {
 						"target": "Player"
 					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turts9",
+					"sid": 586339378484849,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Player"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turts4",
+					"sid": 260202256660692,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Player2"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turts5",
+					"sid": 732130154104645,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Player2"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turts6",
+					"sid": 340728823833887,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Player2"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turts7",
+					"sid": 923734038689567,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Player2"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turts8",
+					"sid": 238196116838328,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Player2"
+					}
 				}
 			],
 			"sid": 783730228092295
@@ -102,6 +156,30 @@
 			"conditions": [
 				{
 					"id": "on-shoot",
+					"objectClass": "Turts9",
+					"sid": 609851548948637,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Turts9",
+					"sid": 470783062298648,
+					"parameters": {
+						"object": "EnemyBlock2",
+						"layer": "2",
+						"image-point": "1"
+					}
+				}
+			],
+			"sid": 502612390583598
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
 					"objectClass": "Turts3",
 					"sid": 426114734465090,
 					"behaviorType": "Turret"
@@ -128,6 +206,126 @@
 				}
 			],
 			"sid": 574235164896739
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Turts4",
+					"sid": 381290443044596,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Turts4",
+					"sid": 256392437596634,
+					"parameters": {
+						"object": "EnemyBlock2",
+						"layer": "2",
+						"image-point": "1"
+					}
+				}
+			],
+			"sid": 661012376325504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Turts5",
+					"sid": 444264087839305,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Turts5",
+					"sid": 765821495564850,
+					"parameters": {
+						"object": "EnemyBlock2",
+						"layer": "2",
+						"image-point": "1"
+					}
+				}
+			],
+			"sid": 632902071757129
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Turts6",
+					"sid": 317703055670219,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Turts6",
+					"sid": 219221538697750,
+					"parameters": {
+						"object": "EnemyBlock2",
+						"layer": "2",
+						"image-point": "1"
+					}
+				}
+			],
+			"sid": 171701066324396
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Turts7",
+					"sid": 360524357285289,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Turts7",
+					"sid": 385916332127071,
+					"parameters": {
+						"object": "EnemyBlock2",
+						"layer": "2",
+						"image-point": "1"
+					}
+				}
+			],
+			"sid": 730861802910073
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Turts8",
+					"sid": 134549704891522,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Turts8",
+					"sid": 268014262647010,
+					"parameters": {
+						"object": "EnemyBlock2",
+						"layer": "2",
+						"image-point": "1"
+					}
+				}
+			],
+			"sid": 308208125955160
 		},
 		{
 			"eventType": "comment",
@@ -162,6 +360,28 @@
 				}
 			],
 			"sid": 509572478387245
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "EnemyBlock2",
+					"sid": 151274075869835
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "EnemyBlock2",
+					"sid": 611911120754455,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "400"
+					}
+				}
+			],
+			"sid": 640449118895666
 		},
 		{
 			"eventType": "block",
@@ -207,6 +427,27 @@
 			"sid": 883455156641549
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "EnemyBlock2",
+					"sid": 196866625440843,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EnemyBlock2",
+					"sid": 794213864930279
+				}
+			],
+			"sid": 493094465635934
+		},
+		{
 			"eventType": "comment",
 			"text": "This should make it so that when the HopeBlock hits the player he goes immune to the red bullets and the turt will stop shooting at player, you can only grab hopeblock Once"
 		},
@@ -230,48 +471,6 @@
 				}
 			],
 			"sid": 434593635076450
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 939056538490016,
-					"parameters": {
-						"object": "HopeBlock"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 394793695942009,
-					"parameters": {
-						"animation": "\"Immune\"",
-						"from": "current-frame"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 563134725364287,
-					"parameters": {
-						"seconds": "5"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Player",
-					"sid": 335698935487034,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "current-frame"
-					}
-				}
-			],
-			"sid": 441448199023157
 		},
 		{
 			"eventType": "comment",
@@ -335,10 +534,10 @@
 				{
 					"id": "set-jump-strength",
 					"objectClass": "Player2",
-					"sid": 872130694809472,
+					"sid": 576819819672836,
 					"behaviorType": "Platform",
 					"parameters": {
-						"jump-strength": "300"
+						"jump-strength": "650"
 					}
 				}
 			],
@@ -401,6 +600,299 @@
 				}
 			],
 			"sid": 424570990467951
+		},
+		{
+			"eventType": "comment",
+			"text": "Quick fix to make some Bullets Dissapear eassier "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "CtrlSwap",
+					"sid": 414035234983872,
+					"parameters": {
+						"object": "EnemyBlock1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EnemyBlock1",
+					"sid": 345425283973863
+				}
+			],
+			"sid": 968101983679324
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "CtrlSwap",
+					"sid": 313645982903636,
+					"parameters": {
+						"object": "EnemyBlock2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EnemyBlock2",
+					"sid": 832004517735913
+				}
+			],
+			"sid": 685753886858475
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "CtrlSwap2",
+					"sid": 823073541489480,
+					"parameters": {
+						"object": "EnemyBlock1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EnemyBlock1",
+					"sid": 666092336608397
+				}
+			],
+			"sid": 946497345575501
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "CtrlSwap2",
+					"sid": 585852003306753,
+					"parameters": {
+						"object": "EnemyBlock2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EnemyBlock2",
+					"sid": 702596837715369
+				}
+			],
+			"sid": 874097050608592
+		},
+		{
+			"eventType": "comment",
+			"text": "Getting the Hope Block Which Can make you imune for a sec if u prees I to use it/ HopeBlock1 destroys as well no more use"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 853803024975606,
+					"parameters": {
+						"object": "HopeBlock"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "ItemPhotoPLaceHolder",
+					"sid": 712758720690482,
+					"parameters": {
+						"object": "HopeBlock2",
+						"layer": "1",
+						"image-point": "1"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "ItemPhotoPLaceHolder",
+					"sid": 963036200218158,
+					"parameters": {
+						"object": "PressI",
+						"layer": "1",
+						"image-point": "2"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ItemPhotoPLaceHolder",
+					"sid": 801280199984281,
+					"disabled": true
+				},
+				{
+					"id": "destroy",
+					"objectClass": "HopeBlock",
+					"sid": 423425255212545
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 622930906565089,
+					"parameters": {
+						"seconds": "6.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressI",
+					"sid": 607103320232039
+				}
+			],
+			"sid": 206512115075935
+		},
+		{
+			"eventType": "comment",
+			"text": "player Can press I to use Immune / This should make it so that when the HopeBlock hits the player he goes immune to the red bullets and the turt will stop shooting at player, you can only grab hopeblock Once"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 932680100550121,
+					"parameters": {
+						"key": 73
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "HopeBlock2",
+					"sid": 926765887410627
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 394793695942009,
+					"parameters": {
+						"animation": "\"Immune\"",
+						"from": "current-frame"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 743493701649248,
+					"parameters": {
+						"seconds": "3.5"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 335698935487034,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "current-frame"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PressIStaionary",
+					"sid": 501487006168095
+				}
+			],
+			"sid": 893509823554748
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "PressI",
+					"sid": 581587826643011
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "ItemPhotoPLaceHolder",
+					"sid": 183301479279162,
+					"parameters": {
+						"object": "PressIStaionary",
+						"layer": "1",
+						"image-point": "2"
+					}
+				}
+			],
+			"sid": 893564287707177
+		},
+		{
+			"eventType": "comment",
+			"text": "Slide Ctrl's"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 286085937427268,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 615906132263993,
+					"parameters": {
+						"animation": "\"Slide\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 163248796443699
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Player",
+					"sid": 270144578871451,
+					"parameters": {
+						"animation": "\"Slide\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 146278192345068,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 376203331815858,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 796832476097861
 		}
 	],
 	"sid": 444953107164376

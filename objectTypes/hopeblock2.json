@@ -1,19 +1,14 @@
 {
-	"name": "EnemyBlock1",
+	"name": "HopeBlock2",
 	"plugin-id": "Sprite",
-	"sid": 959429828920548,
+	"sid": 285280088546727,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 171372293023971
-		},
-		{
-			"behaviorId": "destroy",
-			"name": "DestroyOutsideLayout",
-			"sid": 178303797493755
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 942071760214086
 		}
 	],
 	"effectTypes": [],
@@ -29,24 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 226475,
-						"collisionPoly": {
-							"points": [
-								0.15400000000000003,
-								0.2560000000000001,
-								0.7839999999999998,
-								0.308,
-								0.8399999999999999,
-								0.8739999999999999,
-								0.17000000000000004,
-								0.8759999999999999
-							]
-						},
+						"imageSpriteId": 5228797,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 920090868921816,
+				"sid": 688006730965862,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

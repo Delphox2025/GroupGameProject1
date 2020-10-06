@@ -23,6 +23,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -77,6 +93,14 @@
 			"author": "Scirra",
 			"version": "r210.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "uyn8nghlrvb",
@@ -93,7 +117,23 @@
 			"Keyboard",
 			"Player2",
 			"CtrlSwap2",
-			"Player3"
+			"Player3",
+			"Turts4",
+			"Turts5",
+			"Turts6",
+			"Turts7",
+			"Turts8",
+			"EnemyBlock2",
+			"ItemBoxHolder",
+			"ItemPhotoPLaceHolder",
+			"HopeBlock2",
+			"ItemBar",
+			"PressI",
+			"PressIStaionary",
+			"LifeBar",
+			"Start",
+			"Turts9",
+			"Platforms"
 		],
 		"subfolders": []
 	},
@@ -105,13 +145,15 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"StartPAge"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},
@@ -221,7 +263,7 @@
 		"pixelRounding": true,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-integer-scale",
-		"fullscreenQuality": "low",
+		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
 			0,
@@ -259,5 +301,5 @@
 	},
 	"viewportWidth": 2710,
 	"viewportHeight": 960,
-	"firstLayout": null
+	"firstLayout": "StartPAge"
 }
