@@ -399,7 +399,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Walk",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -433,12 +433,12 @@
 						}
 					},
 					"world": {
-						"x": 172,
-						"y": 314,
-						"width": 53,
-						"height": 87,
-						"originX": 0.5660377358490566,
-						"originY": 0.45977011494252873,
+						"x": 207.29526009952104,
+						"y": 360.50669566054535,
+						"width": 105.06099418909,
+						"height": 176.94483231846735,
+						"originX": 0.5263157894736842,
+						"originY": 0.4117647058823529,
 						"color": [
 							1,
 							1,

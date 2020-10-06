@@ -995,9 +995,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 511095417306670,
+					"sid": 991276253128210,
 					"parameters": {
-						"animation": "\"Walk\"",
+						"animation": "\"run\"",
 						"from": "beginning"
 					}
 				}
