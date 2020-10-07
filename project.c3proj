@@ -39,6 +39,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -72,6 +88,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -96,8 +120,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Pin",
-			"name": "Pin",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Jump-thru",
 			"author": "Scirra",
 			"version": "r210.2",
 			"bundled": false
@@ -111,13 +143,12 @@
 			"EnemyBlock1",
 			"Turts",
 			"Turts2",
-			"Turts3",
-			"HopeBlock",
+			"HopeTurt",
+			"HopeBlockOG",
 			"CtrlSwap",
 			"Keyboard",
 			"Player2",
 			"CtrlSwap2",
-			"Player3",
 			"Turts4",
 			"Turts5",
 			"Turts6",
@@ -133,7 +164,43 @@
 			"LifeBar",
 			"Start",
 			"Turts9",
-			"Platforms"
+			"Platforms",
+			"Key",
+			"Key_Grab",
+			"ForeField",
+			"Plat",
+			"Key2",
+			"Player3",
+			"HopeTurt2",
+			"EnemyBlock3",
+			"EnemyBlock4",
+			"EnemyBlock5",
+			"EnemyBlock6",
+			"EnemyBlock7",
+			"HopeBlockOG2",
+			"PressW",
+			"PressIStaionaryW",
+			"HopeBlock3",
+			"Plat2",
+			"Turts10",
+			"Turts11",
+			"Turts12",
+			"Turts13",
+			"EnemyBlock8",
+			"DeadFloor",
+			"InvisWall",
+			"InvisWall2",
+			"Plat3",
+			"Key3",
+			"PlayrHP",
+			"BG",
+			"Controls",
+			"ActuallControls",
+			"Music",
+			"Audio",
+			"MusicBar",
+			"OnMusic",
+			"SuperBG"
 		],
 		"subfolders": []
 	},
@@ -167,7 +234,18 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "ChunNan - Dragon Road Day - Sonic Unleashed Music Extended [Music OST][Original Soundtrack].mp3",
+					"type": "audio/mpeg",
+					"sid": 783529412296573
+				},
+				{
+					"name": "Credits - Avatar The Last Airbender Soundtrack.mp3",
+					"type": "audio/mpeg",
+					"sid": 120743325535901
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 100532580856631,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "HP_1",
+			"type": "number",
+			"desc": "",
+			"sid": 669279978869515
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "bound",
@@ -19,6 +26,11 @@
 			"behaviorId": "scrollto",
 			"name": "ScrollTo",
 			"sid": 664031195191324
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 380966784613355
 		}
 	],
 	"effectTypes": [],
@@ -58,6 +70,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5263157894736842,
+								"y": 0.47058823529411764
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -111,53 +130,6 @@
 				"sid": 543828775870031,
 				"name": "Run",
 				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 24,
-						"height": 33,
-						"originX": 0.4583333333333333,
-						"originY": 0.4696969696969697,
-						"originalSource": "C:\\Users\\MoN3Y\\OneDrive\\Pictures\\Camera Roll\\ninja_sprite.png",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 8372032,
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 22,
-						"height": 33,
-						"originX": 0.5,
-						"originY": 0.4696969696969697,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 4278825,
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
-						"width": 22,
-						"height": 33,
-						"originX": 0.5,
-						"originY": 0.4696969696969697,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 2121487,
-						"useCollisionPoly": true,
-						"duration": 1
-					}
-				],
-				"sid": 245851633082841,
-				"name": "Immune",
-				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
