@@ -20,8 +20,8 @@
 					"world": {
 						"x": 1354.548381395518,
 						"y": 166.3082722587293,
-						"width": 2716.096762791036,
-						"height": 1607.3834554825414,
+						"width": 2716.0967627910354,
+						"height": 1607.3834554825416,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -37,7 +37,7 @@
 				{
 					"type": "Controls",
 					"properties": {
-						"text": "Welcome Ninja!                                                                Be ready to embark on Challenges that will show if you reall have what it takes to be a Ninja! ",
+						"text": "Welcome Ninja!                                                                Be ready to embark on Challenges that will show if you really have what it takes to be a Ninja! ",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 40,
